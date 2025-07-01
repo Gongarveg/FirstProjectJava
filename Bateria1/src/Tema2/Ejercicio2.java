@@ -9,8 +9,16 @@ package Tema2;
  * @author jquin
  */
 public class Ejercicio2 {
+
     public static void main(String[] args) {
-      String nombre = "Gonzalo Garcia Vega";
-      System.out.println(nombre);
+        String name = "Gonzalo Garcia Vega";
+        String address = "Emparedamiento, 2, Bajo, Ecija";
+        String phone = "680 46 35 24";
+        System.out.println(name);
+        System.out.println(address);
+        System.out.println(phone);
+        System.out.println("------------------------");
+        
+        System.out.println("Nombre: " + name + "\nDireccion: " + address + "\nTelefono: " + phone);
     }
 }
