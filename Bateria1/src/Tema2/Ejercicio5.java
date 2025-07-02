@@ -11,7 +11,7 @@ package Tema2;
 public class Ejercicio5 {
     public static void main(String[] args) {
         float euros = 0.000030f;
-        int pesetas = 4000000;
+        int pesetas = 400000000;
         
         
         System.out.println(pesetas + " pesetas son " + pesetas * euros + " euros");

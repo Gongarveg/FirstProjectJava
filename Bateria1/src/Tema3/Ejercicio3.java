@@ -10,16 +10,16 @@ import java.util.Scanner;
  *
  * @author jquin
  */
-public class Ejercicio2 {
+public class Ejercicio3 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         
-        System.out.println("Escribe el numero de euros que quieres convertir a pesetas");
+        System.out.println("Escribe el numero de pesetas que quieres convertir a euros");
         
-        float euros = s.nextFloat();
-        double pesetas = 166.836;
-        double total = euros * pesetas;
+        float pesetas = s.nextFloat();
+        float euros = 0.000030f;
+        double total = pesetas * euros;
         
-        System.out.println(euros + " euros son " + total + " pesetas");
+        System.out.println(pesetas + " pesetas son " + total + " euros");
     }
 }

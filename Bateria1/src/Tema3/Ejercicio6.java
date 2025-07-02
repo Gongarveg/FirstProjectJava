@@ -10,16 +10,17 @@ import java.util.Scanner;
  *
  * @author jquin
  */
-public class Ejercicio2 {
+public class Ejercicio6 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         
-        System.out.println("Escribe el numero de euros que quieres convertir a pesetas");
+        System.out.println("Escribe la base y la altura del triangulo");
         
-        float euros = s.nextFloat();
-        double pesetas = 166.836;
-        double total = euros * pesetas;
+        float width = s.nextFloat();
+        float heigh = s.nextFloat();
+        float total = width * heigh / 2;
         
-        System.out.println(euros + " euros son " + total + " pesetas");
+        System.out.println("El areadel triangulo es: " + total );    
+        
     }
 }

@@ -10,16 +10,15 @@ import java.util.Scanner;
  *
  * @author jquin
  */
-public class Ejercicio2 {
+public class Ejercicio7 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        
-        System.out.println("Escribe el numero de euros que quieres convertir a pesetas");
-        
-        float euros = s.nextFloat();
-        double pesetas = 166.836;
-        double total = euros * pesetas;
-        
-        System.out.println(euros + " euros son " + total + " pesetas");
+        double iva = 21 / 100;
+        double total;
+        System.out.println("Escribe la base imponible de la factura");
+        double base = s.nextDouble();
+        total = iva * base;
+        total = total + base;
+        System.out.println(total);
     }
 }
