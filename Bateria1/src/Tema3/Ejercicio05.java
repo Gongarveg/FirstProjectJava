@@ -3,23 +3,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Tema3;
-
 import java.util.Scanner;
-
 /**
  *
  * @author jquin
  */
-public class Ejercicio2 {
+public class Ejercicio05 {
     public static void main(String[] args) {
+        
         Scanner s = new Scanner(System.in);
         
-        System.out.println("Escribe el numero de euros que quieres convertir a pesetas");
+        System.out.println("escribe las medidas del rectangulo");
         
-        float euros = s.nextFloat();
-        double pesetas = 166.836;
-        double total = euros * pesetas;
+        double width = s.nextDouble();
+        double height = s.nextDouble();
         
-        System.out.println(euros + " euros son " + total + " pesetas");
+        double total = width * height;
+        
+        System.out.println("el area del rectangulo es " + total + " metros cuadrados");
+        
     }
 }

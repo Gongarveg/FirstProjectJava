@@ -7,19 +7,22 @@ package Tema3;
 import java.util.Scanner;
 
 /**
+        double mb;
+        
  *
- * @author jquin
+ * @author gonza
  */
-public class Ejercicio3 {
+public class Ejercicio10 {
     public static void main(String[] args) {
+        System.out.println("Esta aplicacion sirve para para de Kb a Mb ");
         Scanner s = new Scanner(System.in);
+        System.out.println("introduce los Kb");
+        double kb = s.nextDouble();
+        double mb;
+        mb = kb / 1000;
+        System.out.println(kb + " kB son " + mb + "Mb");
         
-        System.out.println("Escribe el numero de pesetas que quieres convertir a euros");
         
-        float pesetas = s.nextFloat();
-        float euros = 0.000030f;
-        double total = pesetas * euros;
         
-        System.out.println(pesetas + " pesetas son " + total + " euros");
     }
 }
