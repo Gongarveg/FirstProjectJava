@@ -18,7 +18,6 @@ public class Ejercicio7 {
         System.out.println("Escribe la base imponible de la factura");
         double base = s.nextDouble();
         total = iva * base;
-        total = total + base;
         System.out.println(total);
     }
 }
