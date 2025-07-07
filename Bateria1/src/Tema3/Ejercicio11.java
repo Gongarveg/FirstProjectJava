@@ -7,20 +7,22 @@ package Tema3;
 import java.util.Scanner;
 
 /**
+        double mb;
+        
  *
- * @author jquin
+ * @author gonza
  */
-public class Ejercicio6 {
+public class Ejercicio11 {
     public static void main(String[] args) {
+        System.out.println("Esta aplicacion sirve para para de Mb a kB ");
         Scanner s = new Scanner(System.in);
+        System.out.println("introduce los Kb");
+        double kb; 
+        double mb = s.nextDouble();
+        kb = mb * 1000;
+        System.out.println(mb + " Mb son " + kb + "kB");
         
-        System.out.println("Escribe la base y la altura del triangulo");
         
-        float width = s.nextFloat();
-        float heigh = s.nextFloat();
-        float total = width * heigh / 2;
-        
-        System.out.println("El areadel triangulo es: " + total );    
         
     }
 }

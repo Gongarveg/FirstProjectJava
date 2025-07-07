@@ -9,7 +9,7 @@ package Tema3;
  * @author jquin
  */
 import java.util.Scanner;
-public class Ejercicio1 {
+public class Ejericio01 {
      public static void main(String[] args) {
              Scanner s = new Scanner(System.in);
              
