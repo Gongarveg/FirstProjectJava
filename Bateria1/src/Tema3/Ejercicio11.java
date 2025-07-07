@@ -21,8 +21,7 @@ public class Ejercicio11 {
         double mb = s.nextDouble();
         kb = mb * 1000;
         System.out.println(mb + " Mb son " + kb + "kB");
-        
-        
+        s.close();
         
     }
 }
