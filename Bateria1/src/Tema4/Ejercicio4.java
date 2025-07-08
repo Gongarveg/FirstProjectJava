@@ -15,14 +15,18 @@ public class Ejercicio4 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int hourPrice = 12;
+        int hourPriceExtra = 16;
         float extraHours = 0;
-        System.out.println("escribe tus horas trabajadas");
-        float hours = s.nextFloat();
-        
-        if (hours > 40) {
-            extraHours = hours - 40;
+        System.out.print("escribe tus horas trabajadas: ");
+        float ordinaryHours = s.nextFloat();
+        double salario;
+        if (ordinaryHours > 40) {
+            extraHours = ordinaryHours - 40;
+            salario = 40 * hourPrice + extraHours * hourPriceExtra;
+        } else {
+           salario = ordinaryHours * hourPrice;
         }
-        double salario =   * extraHours;
+        
         System.out.println("tu slario es: " + salario);
 
     }
