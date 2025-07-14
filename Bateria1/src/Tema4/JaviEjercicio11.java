@@ -16,6 +16,7 @@ public class JaviEjercicio11 {
         Scanner s = new Scanner(System.in);
         System.out.println("Escribe la hora con formato HH:mm:ss: ");
         String hour = s.nextLine();
+        
         String[] split = hour.split(":");
         int maxSeconds = 86400;
 

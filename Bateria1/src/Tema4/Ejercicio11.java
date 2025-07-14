@@ -20,8 +20,9 @@ public class Ejercicio11 {
         int min = s.nextInt();
         System.out.print("Introduce los segundos");
         int sec = s.nextInt();
+        
         int result = 84600 - (hour * 3600 + min * 60 + sec);
-        System.out.println(result);
+        System.out.println("Quedan para la medianoche: " + result);
         
         
     }
