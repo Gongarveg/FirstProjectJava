@@ -16,6 +16,8 @@ public class JaviEjercicio12 {
         Scanner s = new Scanner(System.in);
         System.out.println("Este programa es un cuestionario sobre las diferentes asignaturas del curso.");
         int note = 0;
+        int maxNote =10;
+        int numQuestions=5;
 
         //Esto son las preguntas
         String q1 = "Lengua: Que es una palabra parasintetica?: ";
@@ -56,8 +58,8 @@ public class JaviEjercicio12 {
         if (a5.equals("Fue el macedonio que consquisto toda Asia")) {
             note++;
         }
-
-        System.out.println("Tu nota es: " + note*2 + ".");
+        note = note* maxNote/numQuestions;
+        System.out.println("Tu nota es: " + note + ".");
 
     }
 }
