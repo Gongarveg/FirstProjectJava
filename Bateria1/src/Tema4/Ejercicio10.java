@@ -15,51 +15,51 @@ public class Ejercicio10 {
         Scanner s = new Scanner(System.in);
         System.out.println("Esta aplicacion sirve para saber cual es tu horoscopo");
         System.out.println("Escribe tu dia de nacimiento y el mes en el numerode dia del anio, por ejemplo: el 27 de DIC seria el dia 361. ");
-        int dayMonth = s.nextInt();
+        int dayYear = s.nextInt();
         String sign = "";
         
         
         
-        if (dayMonth > 1 && dayMonth < 19 ) {
+        if (dayYear > 1 && dayYear < 19 ) {
             sign = "Tu signo es Capricornio";
         }
-        else if (dayMonth > 356 && dayMonth < 365 ) {
+        else if (dayYear > 356 && dayYear < 365 ) {
             sign = "Tu signo es Capricornio";
         }
-        else if (dayMonth > 20 && dayMonth < 49 ) {
+        else if (dayYear > 20 && dayYear < 49 ) {
             sign = "Tu signo es Acuario";
         }
-        else if (dayMonth > 50 && dayMonth < 79 ) {
+        else if (dayYear > 50 && dayYear < 79 ) {
             sign = "Tu singo es Piscis";
         }
-        else if (dayMonth > 80 && dayMonth < 109 ) {
+        else if (dayYear > 80 && dayYear < 109 ) {
             sign = "Tu singo es Aries";
         }
-        else if (dayMonth > 110  && dayMonth < 140 ) {
+        else if (dayYear > 110  && dayYear < 140 ) {
             sign = "Tu singo es Tauro";
         }
-        else if (dayMonth > 141 && dayMonth < 171 ) {
+        else if (dayYear > 141 && dayYear < 171 ) {
             sign = "Tu singo es Geminis";
         }
-        else if (dayMonth > 172 && dayMonth < 203 ) {
+        else if (dayYear > 172 && dayYear < 203 ) {
             sign = "Tu singo es Cancer";
         }
-        else if (dayMonth > 204 && dayMonth < 234 ) {
+        else if (dayYear > 204 && dayYear < 234 ) {
             sign = "Tu singo es Leo";
         }
-        else if (dayMonth > 235 && dayMonth < 265 ) {
+        else if (dayYear > 235 && dayYear < 265 ) {
             sign = "Tu singo es Virgo";
         }
-        else if (dayMonth > 266 && dayMonth < 295 ) {
+        else if (dayYear > 266 && dayYear < 295 ) {
             sign = "Tu singo es Libra";
         }
-        else if (dayMonth > 296 && dayMonth < 325 ) {
+        else if (dayYear > 296 && dayYear < 325 ) {
             sign = "Tu singo es Escropio";
         }
-        else if (dayMonth > 326 && dayMonth < 355 ) {
+        else if (dayYear > 326 && dayYear < 355 ) {
             sign = "Tu singo es Sagitario";
         }
-        else if (dayMonth > 366 || dayMonth < 1) {
+        else if (dayYear > 366 || dayYear < 1) {
             sign = "Este dia del anio no existe";
         }
         System.out.println(sign);
