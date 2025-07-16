@@ -13,27 +13,39 @@ import java.util.Scanner;
 public class Ejercicio13 {
 
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        System.out.println("Este programa ordena tres numeros escritos por teclado");
-        System.out.print("Escribe el primer numero: ");
-        int num1 = s.nextInt();
-        System.out.print("Ecribe el segundo numero: ");
-        int num2 = s.nextInt();
-        System.out.print("Escribe el tercer numero: ");
-        int num3 = s.nextInt();
-        String result = "";
+        Scanner sc = new Scanner(System.in);
 
-        if (num1 < num2) {
-            if (num1 < num3) {
-                 result = "" + num1;
-            } else if (num3 < num2) {
-                result += "" + num3;
-            } else if (num2 < num3) {
-                result += "" + num2;
-            }
+        // Ask for three numbers
+        System.out.print("Enter the first number: ");
+        int a = sc.nextInt();
+        System.out.print("Enter the second number: ");
+        int b = sc.nextInt();
+        System.out.print("Enter the third number: ");
+        int c = sc.nextInt();
+
+        // Find the largest number
+        int largest = a;
+        if (b > largest) {
+            largest = b;
+        }
+        if (c > largest) {
+            largest = c;
         }
 
-        System.out.println("Este es el resultado: " + result);
+        // Find the smallest and the middle number
+        int smallest, middle;
+        if (a <= b && a <= c) {
+            smallest = a;
+            middle = (b <= c) ? b : c;
+        } else if (b <= a && b <= c) {
+            smallest = b;
+            middle = (a <= c) ? a : c;
+        } else {
+            smallest = c;
+            middle = (a <= b) ? a : b;
+        }
 
+        // Print results
+        System.out.println("Largest: " + largest);
+        System.out.println("Sorted (ascending): " + smallest + ", " + middle + ", " + largest);
     }
-}
